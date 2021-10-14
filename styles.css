@@ -32,6 +32,8 @@ h1 {
   border-radius: 25px;
   width: 100%;
   padding: 12px;
+  font-size: 16px;
+  caret-color: rgb(14, 14, 160);
 }
 
 .post {
