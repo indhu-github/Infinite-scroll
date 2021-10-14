@@ -37,8 +37,17 @@ async function showPosts() {
 //show initial posts
 showPosts();
 
+//show loader and fetch more posts
 function showLoading() {
   loader.classList.add("show");
+
+  setTimeout(() => {
+    loader.classList.remove("show");
+    setTimeout(() => {
+      page++;
+      showPosts();
+    }, 300);
+  }, 1000);
 }
 
 window.addEventListener("scroll", () => {
