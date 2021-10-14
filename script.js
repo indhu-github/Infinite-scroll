@@ -65,7 +65,7 @@ function filterPosts(e) {
 
   posts.forEach((post) => {
     const title = post.querySelector(".post-title").innerText.toUpperCase();
-    const body = post.querySelector(".post-body").innerText.toUpperCase(); 
+    const body = post.querySelector(".post-body").innerText.toUpperCase();
 
     if (title.indexOf(term) > -1 || body.indexOf(term) > -1) {
       post.style.display = "flex";
